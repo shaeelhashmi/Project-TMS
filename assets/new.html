@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+  <link rel="stylesheet" href="css/new.css">
+  
+</head>
+<body>
+   
+ <div class="coverscreen nodisplay1" id="coveringdiv"></div>
+ 
+    <aside id="asidedata" class="asidedata">
+        <p class="tooltip"><img src="align-justify.png" alt="selectoption" id="selectbtn"></p>
+     <div>  <button class="nobtndisplay displaytimebtn1 " id="displaytimebtn1"><img src="laptop-2.png" alt=""  class="imgdesign" id="img2"> Display Timetable</button></div>
+     <div>  <button class="nobtndisplay displaytimebtn1 " id="displaytimebtn2"> <img src="pen-square.png" alt="" class="imgdesign"  id="img1">Remove Timetable</button>
+</div>      
+ </aside>
+          
+ <div id="timedisplay" >    
+ <div class="grid" id="grid">
+            <div>
+                <select class="option opt1 optiondesign" id="day1">
+                    <option >Select Day</option>
+                 </select>
+            </div>
+            <div >
+                <select class="opt1 optiondesign" id="time1">
+                    <option >Select Timeslot</option>
+                 </select>
+            </div>
+            <div >
+                <select class="opt1 optiondesign" id="room1">
+                    <option >Select Room</option>
+                </select>
+            </div>
+            <div>
+                <select class="option opt1 optiondesign" id="faculty1">
+                    <option >Select Faculty</option>
+                </select>
+    <div>
+        <button class="buttons" id="facbtn">Add Faculty</button>
+        <button class="buttons" id="remfac">Remove Faculty</button>
+    </div>
+            
+                
+            </div>
+            <div>
+                <select  id="course1" class=" opt1 optiondesign">
+                    <option >Select Course</option>
+                </select>
+            </div>
+           <div>
+                <button class="buttons" id="add">Submit</button>
+                <button class="buttons" id="display" >Display</button>
+               
+            </div>
+       
+    
+            </div>
+            <div id="popup" class="nodisplay displayed">
+                <p>Enter the name of faculty members</p>
+                <input placeholder="Faculty name" id="facultyinput" class="inputele">
+            <div>
+                 <button id="facultysubmit" class="buttons2">Submit</button>
+                <button id="facultyexit" class="buttons2">Exit</button>
+            </div>
+            
+            </div>
+            <div class="nodisplay displayed" id="courseadd">
+                <p>Enter the name of the course of the faculty member</p>
+                <input placeholder="Course name" id="courseinput" class="inputele">
+                <p>Add lab at the end of lab courses</p>
+                <div id="btndiv">
+                    <div> <button id="coursesubmit" class="buttons2">Submit</button></div>
+                    <div><button id="courseexit" class="buttons2">Exit and save</button></div>
+                    <div><button id="courseexit2" class="buttons2">Exit without saving</button></div>
+             </div>
+            </div> 
+            <div class="nodisplay displayed" id="facultyremove">
+               <select class="optiondesign" id="removefaculty">
+                <option>Select faculty</option>
+               </select>
+               <div>
+                <button class="buttons2" id="removedata">Remove data</button>
+                <button class="buttons2" id="remfacexitbtn">Exit</button>
+               </div>
+               
+            </div> 
+    <div class="tablecontainer">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Days</th>
+                            <th>8:30 - 10:00</th>
+                            <th>10:00 - 11:30</th>
+                            <th>11:30 - 1:00</th>
+                            <th>1:00 - 2:30</th>
+                            <th>2:30 - 4:00</th>
+                            <th>4:00 - 5:30</th>
+                            <th>5:30 - 7:00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <th>Monday</th>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr >
+                            <th>Tuesday</th>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr >
+                            <th>Wednesday</th>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Thursday</th>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr >
+                            <th>Friday</th>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                <div class="nodisplay displayed" id="filterfaculty">
+                    <select id="filteroption" class="optiondesign">
+                        <option >Select faculty</option>
+                    </select>
+                    <div>
+                        <button class="buttons2" id="filterbtn">Filter </button>
+                        <button class="buttons2" id="remfilterbtn">Remove filter</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div id="timeremove" class="nodisplay1">
+            <div id="grid1" class="grid ">
+                <select  class="opt1 optiondesign" id="days">
+                    <option >Select Day</option> 
+                </select>
+                <select  class="opt1 optiondesign" id="timeslots">
+                    <option >Select Timeslot</option>
+                </select>
+                <select  class="opt1 optiondesign " id="rooms">
+                    <option >Select Room</option>
+                </select>
+                <select  class="opt1 optiondesign" id="facultymembers">
+                    <option >Select Faculty</option>
+                </select>
+                <select  class="opt1 optiondesign" id="courses">
+                    <option >Select Courses</option>
+                </select>
+                <div>
+                <button id="removebutton" class="buttons">Remove</button>
+                <button id="removeall" class="buttons">Remove All</button>
+            </div>
+            </div>
+        </div>
+
+   
+</body>
+<script>
+let displaybtn=document.getElementById("selectbtn")
+let displaybtn1=document.getElementById("displaytimebtn1")
+    let displaybtn2=document.getElementById("displaytimebtn2")
+    let firstclass=document.getElementById("timedisplay")
+    let secondclass=document.getElementById("timeremove")
+    let imgbtn=document.getElementById("img1");
+    let imgbtn2=document.getElementById("img2");
+displaybtn.addEventListener("click",()=>{
+    let setgrid1=document.getElementById("grid1")
+    let settable=document.getElementById("table");
+    let setgrid=document.getElementById("grid")
+    let aside=document.getElementById("asidedata");
+    setgrid1.classList.toggle("setpostion");
+    aside.classList.toggle("asidedesign");
+    setgrid.classList.toggle("setpostion");
+    table.classList.toggle("setpostion2");
+    displaybtn1.classList.toggle("nobtndisplay")
+    displaybtn2.classList.toggle("nobtndisplay")
+})
+function classfunction(a,b)
+{
+   try
+   {
+    a.classList.remove("nodisplay1");
+    b.classList.add("nodisplay1")
+   } 
+   catch(error)
+   {
+    console.log(error);
+   }
+}
+
+
+displaybtn1.addEventListener("click",()=>{
+    classfunction(firstclass,secondclass)
+})
+displaybtn2.addEventListener("click",()=>{
+    classfunction(secondclass,firstclass)
+})
+img1.addEventListener("click",()=>{
+    classfunction(firstclass,secondclass)
+})
+img2.addEventListener("click",()=>{
+    classfunction(secondclass,firstclass)
+})
+
+
+
+</script>
+<script src="faculty.js"></script>
+<script src="timeslots.js"></script>
+<script src="optionadd.js"></script>
+<script src="buttons.js"></script>
+<script src ="timetable.js"></script>
+<script src="rooms.js"></script>
+<script src="addingdata.js"></script>
+<script src="remove.js"></script>
+</html>

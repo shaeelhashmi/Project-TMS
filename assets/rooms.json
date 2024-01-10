@@ -1,0 +1,40 @@
+    [
+    {
+        "Name":"HL 1",
+        "lab":false
+   },
+   {
+        "Name":"HL 2",
+        "lab":false
+   },
+    {
+        "Name":"HL 3",
+        "lab":false
+    },
+    {
+        "Name":"HL 6",
+        "lab":false
+    },
+
+    {
+        "Name":"HL 7",
+        "lab":false
+    },
+
+    {
+        "Name":"HL 17",
+        "lab":false
+    },
+    {
+        "Name":"OC Lab 01",
+        "lab":true
+    },
+    {
+        "Name":"OC Lab 02",
+        "lab":true
+    },
+    {
+        "Name":"Applied Physics Lab",
+        "lab":true
+    }
+    ]
