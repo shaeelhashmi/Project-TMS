@@ -1,4 +1,6 @@
 # Time table management system<br>
+## Summary
+This is a timetable management system that allows users to create custom timetables and perform some added functions for manipulating the time like adding or removing faculty members etc.
 ## Getting started 
 Make sure you have node.js installed on your system<br>
 ## Scripts
