@@ -4,6 +4,8 @@ This is a timetable management system that allows users to create custom timetab
 ## Getting started
 ### Prerequisites:
 Make sure you have node.js installed on your system<br>
+### Video demonstration:
+Watch the video to see the website in action.Video link [here](https://youtu.be/mTxBglTX_z0)
 ### Installation:
 To run this project locally follow the following steps:
 * You can install the zip file of the project from [here](https://github.com/shaeelhashmi/Project-TMS)
